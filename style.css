@@ -1,0 +1,164 @@
+.navbar {
+  position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;   
+    top: 0;              
+    width: 100%;         
+    background: #111;
+    z-index: 1000;       
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-menu li a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-size: large;
+  }
+
+  li {
+    transition: transform 0.2s ease-in-out; 
+  }
+  
+  li:hover {
+    transform: translateY(-5px); 
+  }
+
+  .logo{
+    font-weight: bolder;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .best{
+    font-size: larger;
+    font-weight: bold;
+    padding: 30px 70px;
+    align-items: center;
+  }
+
+  .bestcompany{
+    font-weight: bold;
+    font-size: larger;
+    align-items: center;
+  }
+
+  .start{
+     text-align: left;
+     padding: 15px 70px;
+  }
+
+  .get-started {
+    appearance: none;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #fcfcfc, #f5f8f7);
+    color: #070707;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.25s ease;
+    box-shadow: 0 6px 16px rgba(8, 8, 8, 0.35);
+  }
+  
+  .get-started:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+  }
+  
+  .get-started:active {
+    transform: translateY(1px) scale(0.97);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  }
+  
+  .get-started:focus-visible {
+    outline: 3px solid rgba(5, 5, 5, 0.6);
+    outline-offset: 2px;
+  }
+
+  .holographic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+  }
+  
+  .holographic-card {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .holographic-card h2 {
+    color: #0ff(246, 250, 250);
+    font-size: larger;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .holographic-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg, 
+      transparent, 
+      transparent 30%, 
+      rgba(3, 3, 3, 0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  
+  .holographic-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(3, 3, 3, 0.5);
+  }
+  
+  .holographic-card:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+  }
+  
+  .body{
+    background-color: black;
+  }
+
+  .about {
+    background: #030303;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    color: #ccc;
+    margin-bottom: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }

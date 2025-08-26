@@ -1,10 +1,10 @@
-/* Base Styles */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #0c0c0c;
     color: #f8f6f6;
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
   
   /* Section */
